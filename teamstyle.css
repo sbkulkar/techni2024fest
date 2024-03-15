@@ -330,3 +330,29 @@ img {
     padding-inline: 2.5rem;
   }
 }
+.nav-bar{
+  background-color: none;
+}
+
+#navcontent{
+ 
+  
+  margin-left: 600px;}
+.nav-item{
+color:rgb(241, 241, 243);
+font-size:large;
+font-weight: 200px;
+padding: 20px;
+margin-left:30px;
+margin-right: 30px;
+display:inline-block;
+}
+.logo {
+  color: white;
+  
+}
+#logo {
+  height: 70px;
+  margin-left: 50px;
+  width: 400px;
+}
