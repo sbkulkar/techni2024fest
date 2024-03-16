@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        /* Add margin and padding for card positioning */
+        .custom-card {
+            margin-top: 70%;
+             /* Example margin */
+            margin-right: 7%;
+            margin-left: 5%;
+            /* Example padding */
+        }
+        body{
+          background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("Glitch\ Hacking\ GIF\ by\ xponentialdesign\ -\ Find\ &\ Share\ on\ GIPHY\ \(1\).gif");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+           
+           /*height: 190rem;*/
+        }
+        .card-body {
+            height: 300px; /* Adjust the height as needed */
+            overflow: auto;
+        }
+
+        
+
+        
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .close-button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+        }
+        .card{
+           
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            
+            width: 250px;
+           /* background-color: rgba(255, 255, 255, 0.5);*/
+           opacity: 0.7;
+           
+        }
+
+        .card:hover{
+         opacity: 1;
+        }
+
+        .container {
+    min-height: 100%;
+
+}
+
+/* Adjustments for specific rows or columns, if needed */
+.row {
+    margin: 0; /* Remove any default margin */
+}
+
+.top {
+
+top: 0;
+width: 100%;
+text-align: center;
+position:absolute;
+padding: 20px 0;
+z-index: 999;
+margin-bottom: 30px; 
+font-size: 40px;
+margin-right: 45%;/* Adjust the margin between heading and top row of cards */
+
+}
+
+.top h1 {
+margin: 0;
+font-size: larger;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-style: italic;
+font-weight: bolder;
+color: aliceblue;
+margin-top: 8%;
+
+
+
+}
+
+
+       /* .row:nth-child(2) {
+    margin-bottom: -30%; /* Adjust the margin top as needed */
+/* Adjust the margin top as needed */
+
+ Adjust the value as needed */
+
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+          </div>
+        <div class="top">
+            <h1>Technophilia(Technical Events)</h1>
+        </div>
+        <div class="alert alert-warning" role="alert">
+           First Pay Before You fill the form.
+          </div>
+    
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="Technical Illustration Projects __ Photos, videos, logos, illustrations and branding.jpeg" alt="Card image cap" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">INNERVE (Project Exhibition )</h5>
+                        <p class="card-text">\Entry Fee: 200/-<br>
+                            For ACM student chapter member: 150/-<br>
+                            Prizes :-
+                            1st: 5000/-
+                            2nd: 3000/-
+                            3rd: 2000/-
+                            Max.no.of participants : 4 <br>
+                            Contact
+                            Srushti Mule - 7756854333
+                            Harshada Motipawar -7499788874
+                        </p>>  
+                        <a href="#" class="btn btn-primary" onclick="showQRCode()">Pay now</a>
+                        <a href="https://forms.gle/XjMsattk56uynuBE7" class="btn btn-secondary">Register now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="Digital Marketing Strategy Development - Best Digital Strategy Services.jpeg" alt="Card image cap" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">INNOVENTURE (Startup Idea )</h5>
+                        <p class="card-text">Entry Fee :
+                            For Group: 300/- <br>
+                            Individual 200 <br>
+                            Prizes :-
+                            1st: 5000/-
+                            2nd: 3000/-
+                            3rd: 2000/-
+                            Max.no.of participants : 4<br>
+                            Contact
+                            Shriya Lakhe - 9172975115
+                            Kirti Pawar - 9960311338
+                            
+                            </p>
+                        <a href="#" class="btn btn-primary" onclick="showQRCode()">Show QR Code</a>
+                        <a href="https://forms.gle/Rh2Ru2eRqUHpcXx86" class="btn btn-secondary">Register now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="Programming and Coding.jpeg" alt="Card image cap" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">BYTE BATTLE ( Coding)</h5>
+                        <p class="card-text">Entry Fee: 100/- <br>
+                            Prizes :-
+                            1st: 2000/-
+                            2nd 1500/-
+                            3rd : 1000/-
+                            Max.no.of participants: 1<br>
+                            Contact :-
+                            Parnavi Pipaliya - 7823007646
+                            Mariyam boxwala - 7666708660<br>
+                            
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="showQRCode()">Pay Now</a>
+                        <a href="https://forms.gle/PbtzqTPH5uabRNPX8" class="btn btn-secondary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+      
+
+
+            <!-- Repeat other cards -->
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="Blue Futuristic Technology Presentation (1).png" alt="Card image cap" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">VISIOVERSE ( Poster Presentation )</h5>
+                        <p class="card-text">Entry Fee: 150/-<br>
+                            Prizes :-
+                            1st: 5000/-
+                            2nd: 3000/-
+                            3rd 2000/-
+                            Max.no.of participants : 4<br>
+                            Contact :-
+                            Neha Sutrave 8830760142
+                            Radhika Dhangare - 9834529712<br>
+                           
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="showQRCode()">Pay now</a>
+                        <a href="https://forms.gle/m4idyAuzrAXQRqdz5" class="btn btn-secondary">Register now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-4 col-lg-4">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="HD wallpaper_ blue and black circuit board, abstract, computer, detail, electronic.jpeg" alt="Card image cap" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">VOLTFORGE (Circuit Building )</h5>
+                        <p class="card-text">Entry Fee: 150/-<br>
+                            Prizes :-
+                            1st: 2000/-
+                            2nd: 1500/-
+                            3rd 1000/-
+                            Max.no.of participants: 2<br>
+                            Contact :-
+                            Pranali Chavan - 8446241019
+                            Vaishnavi Ingale - 7387178923<br>
+                            
+                        </p>
+                        <a href="#" class="btn btn-primary" onclick="showQRCode()">Pay Now</a>
+                        <a href="https://forms.gle/KgeSfmKt2BkAKaT88" class="btn btn-secondary">Register Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-6 col-sm-12 col-md-4 col-lg-4">
+                <div class="card custom-card" style="width: 100%;">
+                    <img class="card-img-top" src="Creating a Visual Brand Identity _ Brand Visual Identity Guidelines.jpeg" alt="Card image cap" onclick="toggleCard(this)">
+                    <div class="card-body">
+                        <h5 class="card-title">BRAINBOUT (Technical Quiz)</h5>
+                        <p class="card-text">Entry Fee: 100/-<br>
+                            Prizes :-
+                            1st: 2000/-
+                            2nd: 1500/-
+                            3rd 1000/-
+                            Max.no.of participants: 4<br>
+                            Contact :-
+                            Mansi Shinde 8423036620
+                            Prachiti Desai 9130028281<br>
+                            </p> 
+                        <a href="#" class="btn btn-primary" onclick="showQRCode()">Show QR Code</a>
+                        <a href="https://forms.gle/8RWxGKhnWTg6pwNF6" class="btn btn-secondary">Register now</a>
+                    </div>
+                </div>
+            </div>
+      
+
+
+         </div>
+    </div>
+
+    <!-- QR Code Popup -->
+    <div class="popup-overlay" id="popup-overlay">
+        <div class="popup-content">
+            <span class="close-button" onclick="closeQRCodePopup()">X</span>
+            <img src="IMG-20240315-WA0023.jpg" alt="QR Code" id="qr-code-image">
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleCard(card) {
+            card.parentElement.classList.toggle("clicked");
+        }
+
+        function showQRCode() {
+            var url = "https://forms.gle/PbtzqTPH5uabRNPX8"; // Replace this with your form URL
+            var qrCodeImage = document.getElementById("qr-code-image");
+            qrCodeImage.src = "https://api.qrserver.com/v1/create-qr-code/?data=" + encodeURIComponent(url);
+            document.getElementById("popup-overlay").style.display = "block";
+        }
+
+        function closeQRCodePopup() {
+            document.getElementById("popup-overlay").style.display = "none";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+</body>
+</html>
